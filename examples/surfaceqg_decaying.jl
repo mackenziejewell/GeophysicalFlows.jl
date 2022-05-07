@@ -206,7 +206,7 @@ anim = @animate for j = 0:round(Int, nsteps/nsubs)
   SurfaceQG.updatevars!(prob)
 end
 
-mp4(anim, "sqg_ellipticalvortex.mp4", fps=14)
+mp4(anim, "/Users/mackenziejewell/Documents/OC675/sqg_ellipticalvortex.mp4", fps=14)
 
 # Let's see how all flow fields look like at the end of the simulation.
 

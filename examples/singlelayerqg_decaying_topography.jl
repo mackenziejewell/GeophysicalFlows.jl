@@ -32,7 +32,7 @@ nothing # hide
       n = 128            # 2D resolution = n²
 stepper = "FilteredRK4"  # timestepper
      dt = 0.05           # timestep
- nsteps = 2000           # total number of time-steps
+ nsteps = 8000           # total number of time-steps
  nsubs  = 10             # number of time-steps for intermediate logging/plotting (nsteps must be multiple of nsubs)
 nothing # hide
 
@@ -46,6 +46,10 @@ nothing # hide
 # an elliptical mount at ``(x, y) = (1, 1)``, and an elliptical depression at ``(x, y) = (-1, -1)``.
 σx, σy = 0.4, 0.8
 topographicPV(x, y) = 3exp(-(x-1)^2/(2σx^2) -(y-1)^2/(2σy^2)) - 2exp(-(x+1)^2/(2σx^2) -(y+1)^2/(2σy^2))
+
+# ## VOLCANO at (x,y) = (0,0)
+# σx, σy = 1, 1
+# topographicPV(x, y) = 3exp(-(x)^2/(2σx^2) -(y)^2/(2σy^2)) - 3exp(-(x)^2/(2(σx/2)^2) -(y)^2/(2(σy/2)^2))
 nothing # hide
 
 # ## Problem setup

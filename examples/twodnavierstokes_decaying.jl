@@ -170,7 +170,7 @@ anim = @animate for j = 0:Int(nsteps/nsubs)
   TwoDNavierStokes.updatevars!(prob)  
 end
 
-mp4(anim, "twodturb.mp4", fps=18)
+mp4(anim, "/Users/mackenziejewell/Documents/OC675/twodturb.mp4", fps=18)
 
 
 # Last we can save the output by calling
